@@ -4,8 +4,16 @@
   "rangeStrategy": "pin",
   "lockFileMaintenance": {
     "enabled": true,
-    "extends": ["schedule:weekly"]
+    "extends": ["schedule:weekly"],
+    "automerge": true
   },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    }
+  ],
   "hostRules": [
     {
       "matchHost": "https://npm.pkg.github.com/",
