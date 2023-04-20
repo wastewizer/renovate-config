@@ -5,13 +5,17 @@
   "lockFileMaintenance": {
     "enabled": true,
     "extends": ["schedule:weekly"],
-    "automerge": true
+    "automerge": true,
+    "automergeType": "pr",
+    "platformAutomerge": true
   },
   "packageRules": [
     {
       "matchUpdateTypes": ["patch"],
       "matchCurrentVersion": "!/^0/",
-      "automerge": true
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
     }
   ],
   "hostRules": [
