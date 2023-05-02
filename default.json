@@ -2,6 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":semanticCommits"],
   "rangeStrategy": "pin",
+  "prConcurrentLimit": 4,
   "lockFileMaintenance": {
     "enabled": true,
     "extends": ["schedule:weekly"],
