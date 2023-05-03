@@ -14,7 +14,7 @@
     {
       "packageNames": ["node"],
       "major": {
-        "enabled": false
+        "enabled": true
       },
       "allowedVersions": "^18"
     },
