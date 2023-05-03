@@ -10,14 +10,12 @@
     "automergeType": "pr",
     "platformAutomerge": true
   },
+  "docker": {
+    "major": {
+      "enabled": false
+    }
+  },
   "packageRules": [
-    {
-      "packageNames": ["node"],
-      "major": {
-        "enabled": true
-      },
-      "allowedVersions": "^18"
-    },
     {
       "matchUpdateTypes": ["patch"],
       "matchCurrentVersion": "!/^0/",
