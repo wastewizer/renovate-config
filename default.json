@@ -12,6 +12,13 @@
   },
   "packageRules": [
     {
+      "packageNames": ["node"],
+      "major": {
+        "enabled": false
+      },
+      "allowedVersions": "^18"
+    },
+    {
       "matchUpdateTypes": ["patch"],
       "matchCurrentVersion": "!/^0/",
       "automerge": true,
