@@ -17,6 +17,8 @@
   },
   "packageRules": [
     {
+      "groupName": "All patch dependencies",
+      "groupSlug": "all-patch",
       "matchUpdateTypes": ["patch"],
       "matchCurrentVersion": "!/^0/",
       "automerge": true,
