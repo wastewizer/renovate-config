@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", "group:nodeJs", ":semanticCommits"],
+  "extends": ["config:recommended", ":semanticCommits"],
   "rangeStrategy": "pin",
   "prConcurrentLimit": 2,
   "lockFileMaintenance": {
@@ -24,6 +24,12 @@
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true
+    },
+    {
+      "groupName": "Node.js",
+      "commitMessageTopic": "Node.js",
+      "matchDepNames": ["node"],
+      "matchPackagePatterns": ["/node$"]
     }
   ],
   "hostRules": [
