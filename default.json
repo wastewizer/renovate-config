@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", ":semanticCommits"],
+  "extends": ["config:recommended", "group:nodeJs", ":semanticCommits"],
   "rangeStrategy": "pin",
   "prConcurrentLimit": 2,
   "lockFileMaintenance": {
@@ -9,6 +9,11 @@
     "automerge": true,
     "automergeType": "pr",
     "platformAutomerge": true
+  },
+  "docker": {
+    "major": {
+      "enabled": false
+    }
   },
   "packageRules": [
     {
@@ -19,14 +24,6 @@
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true
-    },
-    {
-      "packageNames": ["node"],
-      "major": {
-        "enabled": true
-      },
-      "separateMultipleMajor": true,
-      "allowedVersions": "^20"
     }
   ],
   "hostRules": [
