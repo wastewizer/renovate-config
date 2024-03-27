@@ -10,11 +10,6 @@
     "automergeType": "pr",
     "platformAutomerge": true
   },
-  "docker": {
-    "major": {
-      "enabled": false
-    }
-  },
   "packageRules": [
     {
       "groupName": "All patch dependencies",
@@ -24,6 +19,14 @@
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true
+    },
+    {
+      "packageNames": ["node"],
+      "major": {
+        "enabled": true
+      },
+      "separateMultipleMajor": true,
+      "allowedVersions": "^20"
     }
   ],
   "hostRules": [
