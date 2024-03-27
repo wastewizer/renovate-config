@@ -10,6 +10,11 @@
     "automergeType": "pr",
     "platformAutomerge": true
   },
+  "docker": {
+    "major": {
+      "enabled": false
+    }
+  },
   "packageRules": [
     {
       "groupName": "All patch dependencies",
