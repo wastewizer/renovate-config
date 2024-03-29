@@ -29,7 +29,8 @@
       "groupName": "Node.js",
       "commitMessageTopic": "Node.js",
       "matchDepNames": ["node"],
-      "matchPackagePatterns": ["/node$"]
+      "matchPackagePatterns": ["/node$"],
+      "excludePackageNames": ["nx/node"]
     }
   ],
   "hostRules": [
