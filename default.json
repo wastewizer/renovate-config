@@ -30,7 +30,7 @@
       "commitMessageTopic": "Node.js",
       "matchDepNames": ["node"],
       "matchPackagePatterns": ["/node$"],
-      "excludePackageNames": ["nx/node"]
+      "excludePackageNames": ["@nx/node"]
     }
   ],
   "hostRules": [
