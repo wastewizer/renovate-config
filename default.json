@@ -38,6 +38,12 @@
       "matchHost": "https://npm.pkg.github.com/",
       "hostType": "npm",
       "token": "{{ secrets.NPM_TOKEN }}"
+    },
+    {
+      "matchHost": "us-east1-python.pkg.dev",
+      "hostType": "pypi",
+      "username": "_json_key_base64",
+      "password": "{{ secrets.GCP_SA }}"
     }
   ]
 }
