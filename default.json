@@ -17,6 +17,10 @@
   },
   "packageRules": [
     {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
       "groupName": "All patch dependencies",
       "groupSlug": "all-patch",
       "matchUpdateTypes": ["patch"],
