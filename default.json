@@ -33,9 +33,8 @@
       "groupName": "Node.js",
       "commitMessageTopic": "Node.js",
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["node"],
-      "matchPackagePatterns": ["/node$"],
-      "excludePackageNames": ["@nx/node"]
+      "matchDepNames": ["node"],
+      "matchPackageNames": ["/(?:^|/)node$/", "!@nx/node"]
     }
   ],
   "hostRules": [
