@@ -1,6 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended", ":semanticCommits"],
+  "timezone": "America/New_York",
+  "schedule": ["* 6-12 * * 1"],
   "rangeStrategy": "pin",
   "prConcurrentLimit": 2,
   "lockFileMaintenance": {
@@ -21,19 +23,10 @@
       "minimumReleaseAge": "3 days"
     },
     {
-      "groupName": "All patch dependencies",
-      "groupSlug": "all-patch",
-      "matchUpdateTypes": ["patch"],
-      "matchCurrentVersion": "!/^0/",
-      "automerge": true,
-      "automergeType": "pr",
-      "platformAutomerge": true
-    },
-    {
-      "groupName": "All pre-release",
-      "groupSlug": "all-prerelease",
-      "matchUpdateTypes": ["patch"],
-      "matchPackageNames": ["ruff"],
+      "groupName": "All non-major dependencies",
+      "groupSlug": "all-minor-patch",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true
