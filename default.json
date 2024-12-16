@@ -23,13 +23,19 @@
       "minimumReleaseAge": "3 days"
     },
     {
-      "groupName": "All non-major dependencies",
-      "groupSlug": "all-minor-patch",
+      "groupName": "All patch dependencies",
+      "groupSlug": "all-patch",
       "matchPackageNames": ["*"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": ["patch"],
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true
+    },
+    {
+      "groupName": "All minor dependencies",
+      "groupSlug": "all-minor",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["minor"]
     },
     {
       "groupName": "Node.js",
